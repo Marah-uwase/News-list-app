@@ -1,0 +1,29 @@
+{% macro displayNews(news_list)%}
+    {% for news in news_list%}
+        <!-- <div class="col-md-3">
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>{{news.name}}</h4>
+                </div>
+                <div class="col-md-6">
+                    <p>{{news.description|truncate(100)}}</p>
+                    <a href="/articles/{{news.id}}">Browse articles</a>
+                </div>
+            </div>
+        </div> -->
+        <div class="col-md-3 border border-primary">
+        <div class="card border border-primary">
+                <div class="card-header">
+                    <h4 class="news_name"><strong>{{news.name}}</strong></h4>
+                </div>
+                <div class="card-body">
+                  <blockquote class="blockquote mb-0">
+                        <p>{{news.description|truncate(200)}}</p>
+                    <footer <cite title="Source Title"><a href="/articles/{{news.id}}">Browse articles</a></cite></footer>
+                  </blockquote>
+                </div>
+            </div>  
+        </div>
+    {% endfor%}
+{% endmacro%}
+
