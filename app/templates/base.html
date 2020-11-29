@@ -1,0 +1,33 @@
+{% extends 'bootstrap/base.html'%}
+
+{% block styles%}
+    {{ super() }}
+    <link href="https://fonts.googleapis.com/css?family=Special+Elite" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Allerta+Stencil" rel="stylesheet">
+    <link rel="stylesheet" href="{{url_for('static',filename='css/index.css')}}">
+{% endblock %}
+
+{% block navbar %}
+    {% include 'navbar.html' %}
+{% endblock %}
+
+
+
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    {% if title %}
+    <title>{{title}}</title>
+    {% else %}
+    <title>Welcome to Breaking News site</title>
+    {% endif %}
+</head>
+<body>
+    {% block content%}
+
+    {% endblock%}    
+</body>
+</html> -->
