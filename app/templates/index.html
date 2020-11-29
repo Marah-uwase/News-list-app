@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% import 'macros.html' as macro %}
+
+{% block content%}
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center category">*Technology News*</h2>
+        </div>
+            {{macro.displayNews(tech)}}
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center category"> *General News*</h2>
+        </div>  
+            {{macro.displayNews(general)}}        
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center category">*Sports News*</h2>
+        </div>
+            {{macro.displayNews(sports)}}        
+    </div>
+    <div class="row">
+        <div class="col-md-12">  
+            <h2 class="text-center category">*Business News*</h2>  
+        </div>
+            {{macro.displayNews(business)}}    
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center category">*Entertainment News*</h2>
+        </div>
+            {{macro.displayNews(entertainment)}}
+    </div>
+    <div class="row">
+        <div class="col-md-12">
+            <h2 class="text-center category">*Health News*</h2>
+        </div>
+            {{macro.displayNews(health)}}    
+    </div>
+</div>
+{% endblock%}
