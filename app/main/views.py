@@ -27,7 +27,7 @@ def index():
     health_news = get_news_source('health')
 
     #Title
-    title = 'Get breaking news headlines'
+    title = 'Home, Get todays News headlines'
 
     return render_template('index.html', title = title, tech = technology_news, general = general_news, sports = sports_news, business = business_news, entertainment = entertainment_news, health = health_news)
 
